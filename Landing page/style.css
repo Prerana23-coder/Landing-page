@@ -1,0 +1,123 @@
+*{ 
+    margin:0;
+    padding:0;
+ 
+}
+html , body { 
+   width: 100%;
+   height: 100%;
+}
+#main{
+    height:100%;
+    width: 100%;
+    display:flex;
+}
+#right{ 
+    height: 100%;
+    width: 90%;
+    background-color:rgb(255, 249, 249);
+   
+}
+#left{
+    height: 100%;
+    width:80%;
+    position: relative;
+} 
+#rtop{
+    width:100%;
+    height:50%; 
+    background-color: rgb(49, 49, 148);
+    display: flex;
+}
+#rbottom{ 
+    width:100%;
+    height:50%;
+    background-color: rgb(219, 169, 75);
+    background-image: url(https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#rtopleft{ 
+    width:55%;
+    height:100%;
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+#rtopright{ 
+    width:45%;
+    height:100%;
+    background-color: green;
+    background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Ds);
+    background-size: cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+   
+}
+#lnav{ 
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+    padding:20px  30px;
+   
+}
+#lnavr a { 
+  margin-right:100px;
+  text-decoration: none;
+  color: black;
+  font-family: "gilroy";
+  font-weight: bolder;
+  font-size: 20px;
+}
+i{ 
+    margin-right:80px;
+}
+#lnavr i{ 
+    color: rgb(13, 174, 189);
+}
+#left #text-center{ 
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+#text-center h1{ 
+    font-size :90px;
+    font-weight: 900;
+}
+#text-center p{ 
+    opacity: .6;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+#text-center a { 
+    color:black;
+    text-decoration: none;
+    border-bottom: 1px solid black ;
+    padding-bottom: 5px;
+    font-weight: 600;
+    opacity: .6;
+}
+@media screen and (max-width: 1024px) {
+    #left, #main, #right {
+      width: 100%; 
+    }
+    #main{  
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 800px) {
+    #left, #main, #right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    #main{ 
+        display: inline-block;
+        width:800px;
+    }
+   
+}
